@@ -1,9 +1,7 @@
-```yaml
+
 name: Python CI
 
-on:
-  push:
-  workflow_dispatch:
+on: [push, workflow_dispatch]
 
 jobs:
   build:
@@ -23,4 +21,3 @@ jobs:
 
       - name: Run Python program
         run: python hello.py
-```
